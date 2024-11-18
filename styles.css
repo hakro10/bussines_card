@@ -1,0 +1,65 @@
+
+html {
+    background-color: #543f22;
+}
+
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.box {
+    border: 1px dotted black;
+}
+.avatar {
+    width: 150px;
+    border-radius: 80px;
+    margin: 0px 10px 0px 10px;
+    
+}
+.info {
+    margin: 0px 10px 0px 10px;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 50px auto;
+    color: #222222;
+    background-color:  #C3C9E9;
+    border-bottom: 10px solid #373F47;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #6C91C2;
+}
+
+.hover:hover {
+    color: #373F47;
+    font-size: 25px;
+    /* text-shadow: 1px 2px 5px rgb(148, 102, 102);    */
+    animation-name: glow;
+    animation-duration: 4s;
+}
+
+.avatar:hover {
+    width: 250px;
+    /* box-shadow: 10px 10px 5px #6C91C2; */
+    border-radius: 10px;
+    animation-name: flow;
+    animation-duration: 4s;
+}
+.card:hover {
+    width: 600px;
+}
+
+@keyframes flow {
+    from {box-shadow: 10px 10px 5px #6C91C2;}
+    to {box-shadow: 10px 10px 5px #c28e6c;}
+}
+@keyframes glow {
+    from {text-shadow: 1px 2px 5px rgb(148, 102, 102);}
+    to {text-shadow: 1px 2px 5px rgb(254, 2, 2);}
+}
+
